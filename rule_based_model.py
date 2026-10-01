@@ -39,7 +39,7 @@ FILE_NAME = "amazon_ecommerce_electronics_CLEANED.csv"
 # -----------------------------------------------------------
 if not os.path.exists(FILE_NAME):
     try:
-        from google.colab import files
+       # from google.colab import files
         print(f"'{FILE_NAME}' not found - please choose the file to upload:")
         uploaded = files.upload()
         FILE_NAME = list(uploaded.keys())[0]
